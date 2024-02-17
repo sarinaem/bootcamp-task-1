@@ -1,0 +1,80 @@
+/* reset */ * , *::after , *::before { list-style: none; box-sizing: border-box; margin: 0; padding: 0; }
+/* root */
+
+:root { --color-primaray: #219F95; --color-heading: #000000; --color-white: #fff; --color-body: #696969; --color-secendry-light: #234894; --color-secendry: #AFCEDD; --color-headings: #1E1E1E; --avatar-size: 40px; --color-text: #000; }
+
+html { font-size: 62.5%; }
+
+body { color: var(--color-body); font-size: 1.4rem; line-height: 1.7rem; }
+
+h1, h2 { color: var(--color-heading); font-weight: 700; }
+
+h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+
+@media screen and (min-width: 1024px) { body { font-size: 1.8rem; } h2 { font-size: 2.2rem; margin-bottom: 3.5rem;
+
+
+
+/* button */
+
+.btn { outline: none; border: 0; padding: 2rem 2.5rem; border-radius: 8px; cursor: pointer; margin: 1rem; text-align: center; color: #fff; font-size: 1.4rem; white-space: nowrap; }
+
+.btn--primary { background-color: var(--color-primaray); color: #fff; }
+
+@media screen and (min-width: 1024px){ .btn { font-size: 1.6rem; } }
+
+/* badge */
+
+.badge { display: inline-block; border-radius: 6px; font-size: 1.2rem; padding: 0.5rem 1rem; border: 2px solid var(--color-secendry); box-shadow: 0 2px 3px 0 #ccc; margin-left: 1rem; }
+
+.badge--primary { background-color: var(--color-secendry); color: var(--color-secendry-light); }
+
+@media screen and (min-width: 1024px){ .badge { font-size: 1.4rem; } }
+
+.block { padding: 4rem 2rem; }
+
+.block-heading { margin-top: 6rem ; color: var(--color-heading); }
+
+/* request section / .request-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(470px, 300px) ); justify-content: center; gap: 3rem 4rem; / margin-top: 3rem; */ } .request { max-width: 400px; height: 100%; }
+
+@media screen and (min-width:768px) { .request-group { grid-template-columns: repeat(2, 1fr); } .card__date { font-size: 1.2rem; } }
+
+@media screen and (min-width: 1024px) { .request-group { grid-template-columns: repeat(3, 1fr); } }
+
+/* card */
+
+.card { border: 0; border-radius: 16px; background-color: #fff; overflow: hidden;
+
+}
+
+.card__header, .card__content { padding: 2rem 3rem; }
+
+.card__header { display: flex; justify-contavatarent: space-between; align-items: center; margin-top: 0; padding-top: 0; }
+
+.card__introduction { display: flex; justify-content: flex-start; align-items: flex-start;
+
+}
+
+.card__name { padding: 0.25rem; color: var(--color-secendry-light); }
+
+.card__date { font-size: 1rem; color: var(--color-body); }
+
+.card__title { color: var(--color-headings); margin-top: -3rem; margin-bottom: 1rem; font-weight: bold; font-size: 1.8rem ; font-family: "IRANVazir";
+
+}
+
+.card__detail { font-size: 1.2rem; }
+
+/* avatar */
+
+.user { display: flex; justify-content: center; }
+
+.avatar { display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;
+
+} .user__avatar { width: var(--avatar-size); height: var(--avatar-size); object-fit: cover; border: 1px solid #fff; border-radius: 10px; overflow: hidden; cursor: pointer;
+
+} .avatar .user__name { font-size: 1.4rem; font-weight: bold; color: var(--color-text); padding-left: 14rem;
+
+}
+
+@media screen and (min-width:768px) { .user__name { font-size: 1.6rem; } }
